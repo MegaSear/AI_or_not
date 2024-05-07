@@ -3,4 +3,5 @@
 Как показала практика, трансформер в сравнении с обычными конволционными сетями справляется намного лучше и обучается быстрее.
 API kaggle dataset
 kaggle datasets download -d vasilijkrukovskij/ai-or-not5
+
 Сгенерированные изображения взяты из stable diffusion.
