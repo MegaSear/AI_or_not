@@ -70,7 +70,7 @@
 
 1. Подключите датасет `vasilijkrukovskij/ai-or-not5` (`kaggle datasets download -d vasilijkrukovskij/ai-or-not5`).
 2. Запустите `transformer.ipynb` целиком. Эпоха занимает около 1.5 минуты, обучение около 15 минут.
-3. Предсказания сохраняются в `/kaggle/working/submission.csv`, лучшие веса — в `/kaggle/working/best_model.pth`.
+3. Предсказания сохраняются в `/kaggle/working/submission.csv`, лучшие веса — в `/kaggle/working/weights/best_model.pth`.
 
 Пути к данным заданы в начале ноутбука (`DATA_DIR`, `TRAIN_CSV`, `TEST_CSV`).
 
