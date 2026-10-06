@@ -28,7 +28,7 @@
 
 ## Пайплайн
 
-**Данные.** Соревновательный датасет плюс собственные изображения, сгенерированные Stable Diffusion. Всего 1479 изображений (`DATASET3.csv`), стратифицированный сплит 85/15: 1257 train, 222 val. Test — 506 изображений.
+**Данные.** Соревновательный датасет плюс собственные изображения, сгенерированные Stable Diffusion. Всего 1479 изображений (`train.csv`), стратифицированный сплит 85/15: 1257 train, 222 val. Test — 506 изображений.
 
 **Модель.** `torchvision.models.swin_v2_t` (веса `IMAGENET1K_V1`) с новой головой `Linear(768→256) → ReLU → Dropout(0.25) → Linear(256→1)`, функция потерь `BCEWithLogitsLoss`.
 
@@ -58,7 +58,7 @@
 
 Ноутбук рассчитан на Kaggle (GPU):
 
-1. Подключите датасет `vasilijkrukovskij/ai-or-not-v5` (`kaggle datasets download -d vasilijkrukovskij/ai-or-not-v5`).
+1. Подключите датасет `vasilijkrukovskij/ai-or-not5` (`kaggle datasets download -d vasilijkrukovskij/ai-or-not5`).
 2. Запустите `transformer.ipynb` целиком. Эпоха занимает около 1.5 минуты, обучение около 15 минут.
 3. Предсказания сохраняются в `/kaggle/working/submission.csv`, лучшие веса — в `/kaggle/working/best_model.pth`.
 
